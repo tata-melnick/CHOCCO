@@ -1,0 +1,31 @@
+@mixin btn ($bg) {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-radius: 100px;
+    background: $bg;
+    color: #fff;
+
+    @if $bg==$green {
+        &:hover {
+            background-color: $darkGreen;
+        }
+    }
+
+    @if $bg==#FFF {
+        color: $darkGreen;
+
+        &:hover {
+            color: #497870;
+        }
+    }
+}
+
+.btn__white {
+    @include btn(#FFFFFF);
+}
+
+.btn__green {
+    @include btn($green);
+}

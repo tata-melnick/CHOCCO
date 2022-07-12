@@ -1,0 +1,14 @@
+.benefits {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    height: 100vh;
+    min-height: 650px;
+}
+
+.benefits__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 25px 0 50px;
+}
