@@ -1,23 +1,21 @@
 .hero {
-    background: url("../../img/hero/pattern.png") right bottom no-repeat;
+    background: url("../../img/decoration/pattern_hero.png") right bottom no-repeat;
     background-color: $blue;
     color: #FFFFFF;
-    height: 100vh;
-    min-height: 650px;
-    position: relative;
+    z-index: 1;
 
     &:before {
         position: absolute;
         bottom: -40px;
         left: 5%;
-        content: url("../../img/hero/leaf.png");
+        content: url("../../img/decoration/leaf_hero.png");
     }
 
     &:after {
         position: absolute;
         bottom: -55px;
         right: 5%;
-        content: url("../../img/hero/berries.png");
+        content: url("../../img/decoration/berries_hero.png");
     }
 }
 
@@ -25,9 +23,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     height: 100%;
     padding: 25px 0 50px;
-    background: url("../../img/hero/bars.png") right center / 50% auto no-repeat;
+    background: url("../../img/decoration/bars_hero.png") right center / 50% auto no-repeat;
+    z-index: 0;
 }
 
 .header {
@@ -35,6 +35,17 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 85px;
+    width: 100%;
+
+    .header__logo {
+        width: 53px;
+        height: 38px;
+    }
+
+    .header__phone {
+        width: 165px;
+        height: 30px;
+    }
 }
 
 .menu__list {
@@ -52,13 +63,21 @@
     }
 }
 
-.phone__img {
-    margin-right: 5px;
-}
-
 .phone {
     display: flex;
-    font-size: 22px;
+    align-items: center;
+    justify-content: flex-end;
+
+    .phone__img {
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .phone__number {
+        font-size: 22px;
+        font-weight: 400;
+    }
 }
 
 .hero__title-section {

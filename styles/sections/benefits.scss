@@ -1,14 +1,85 @@
 .benefits {
-    background-color: #FFFFFF;
-    color: #FFFFFF;
-    height: 100vh;
-    min-height: 650px;
+    background: url("../../img/decoration/pattern_benefits.png") left top 57% no-repeat;
+    background-color: #fff;
+    position: relative;
+
+    &:before {
+        content: url("../../img/decoration/berry_benefits.png");
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+    }
+
+    .benefits__container {
+        padding: 100px 0 115px;
+    }
 }
 
-.benefits__container {
+.section__content {
+    width: 100%;
+    height: max-content;
+}
+
+.section__list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 25px 0 50px;
+    height: max-content;
+
+    .section__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3%;
+        width: 332px;
+        height: max-content;
+
+        &:before {
+            content: url("../../img/decoration/combined_shape_benefits.png");
+            position: absolute;
+            top: 60px;
+            right: 0;
+            transform: translateX(50%);
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        .section__img {
+            background: $grey;
+            width: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+
+            .benefits__img {
+                width: 68px;
+                height: 68px;
+            }
+        }
+
+        .section__title {
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 32px;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        .section__title-desc {
+            text-align: center;
+            line-height: 22px;
+        }
+    }
 }
