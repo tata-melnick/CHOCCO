@@ -1,5 +1,5 @@
 .hero__section {
-    background: url("../../img/decoration/pattern_hero.png") right bottom no-repeat;
+    background: url("../img/decoration/pattern_hero.png") right bottom no-repeat;
     background-color: $blue;
     color: #FFFFFF;
     z-index: 1;
@@ -8,14 +8,14 @@
         position: absolute;
         bottom: -40px;
         left: 5%;
-        content: url("../../img/decoration/leaf_hero.png");
+        content: url("../img/decoration/leaf_hero.png");
     }
 
     &:after {
         position: absolute;
         bottom: -55px;
         right: 5%;
-        content: url("../../img/decoration/berries_hero.png");
+        content: url("../img/decoration/berries_hero.png");
     }
 }
 
@@ -23,7 +23,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 25px 0 50px;
-    background: url("../../img/decoration/bars_hero.png") right center / 50% auto no-repeat;
+    background: url("../img/decoration/bars_hero.png") right center / 50% auto no-repeat;
 }
 
 .header {

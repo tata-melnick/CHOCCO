@@ -1,19 +1,19 @@
 .order__section {
     position: relative;
-    background: url("../../img/background/bg_order.png") center center no-repeat;
+    background: url("../img/background/bg_order.png") center center no-repeat;
     background-color: #cfdeda;
     color: $lightGreen;
 
     &:before {
         position: absolute;
-        content: url("../../img/decoration/berry_order.png");
+        content: url("../img/decoration/berry_order.png");
         left: 5%;
         bottom: 100px;
     }
 
     &:after {
         position: absolute;
-        content: url("../../img/decoration/leaf_order.png");
+        content: url("../img/decoration/leaf_order.png");
         right: 5%;
         bottom: 10px;
     }

@@ -5,7 +5,7 @@
 
     &:before {
         position: absolute;
-        content: url("../../img/decoration/pattern_reviews.png");
+        content: url("../img/decoration/pattern_reviews.png");
         left: 0;
         bottom: -160px;
     }
@@ -14,7 +14,7 @@
         position: absolute;
         right: 10%;
         top: 40px;
-        content: url("../../img/decoration/berry_reviews_2.png");
+        content: url("../img/decoration/berry_reviews_2.png");
     }
 }
 
@@ -23,7 +23,7 @@
 
     &:before {
         position: absolute;
-        content: url("../../img/decoration/berry_reviews_1.png");
+        content: url("../img/decoration/berry_reviews_1.png");
         left: 0;
         bottom: -90px;
     }
@@ -36,7 +36,7 @@
 
 .reviews__display {
     position: relative;
-    background: url("../../img/decoration/pattern_reviews_2.png") right top 25px no-repeat;
+    background: url("../img/decoration/pattern_reviews_2.png") right top 25px no-repeat;
     background-color: $grey;
     display: flex;
     width: 100%;
