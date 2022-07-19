@@ -4,6 +4,7 @@ html, body {
 
 body {
     font-size: $baseFontSize;
+    font-weight: 400;
     font-family: "Alegreya Sans", Helvetica, sans-serif;
     color: $darkGrey;
     line-height: 1.42;
@@ -40,6 +41,10 @@ h1, h2, h3 {
     font-weight: normal;
 }
 
+p {
+    margin: 0;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -56,10 +61,8 @@ ul {
 section {
     position: relative;
     height: 100vh;
-    min-height: 650px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 footer {
@@ -91,19 +94,21 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     width: $containerWidht;
     height: 100%;
     margin: 0 auto;
 }
 
-.section__title-section {
+.headline {
     display: flex;
     flex-direction: column;
+    width: 55%;
+    height: max-content;
     align-items: center;
+    margin-bottom: 10%;
 
-    .section__mane-title {
+    .section__title {
         font-size: 48px;
         font-weight: 700;
         line-height: 58px;
@@ -111,12 +116,12 @@ img {
         text-transform: uppercase;
     }
 
-    .section__title-desc {
+    .headline__subtitle {
         font-weight: 300;
         line-height: 22px;
         color: $darkGrey;
+        width: 85%;
         margin-top: 20px;
-        width: 55%;
         text-align: center;
     }
 }

@@ -1,4 +1,4 @@
-.hero {
+.hero__section {
     background: url("../../img/decoration/pattern_hero.png") right bottom no-repeat;
     background-color: $blue;
     color: #FFFFFF;
@@ -20,21 +20,17 @@
 }
 
 .hero__container {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 100%;
     padding: 25px 0 50px;
     background: url("../../img/decoration/bars_hero.png") right center / 50% auto no-repeat;
-    z-index: 0;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 85px;
+    height: max-content;
     width: 100%;
 
     .header__logo {
@@ -50,11 +46,8 @@
 
 .menu__list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     .menu__item {
-        font-weight: 400;
         margin-right: 30px;
 
         &:last-child {
@@ -76,7 +69,6 @@
 
     .phone__number {
         font-size: 22px;
-        font-weight: 400;
     }
 }
 
@@ -104,7 +96,6 @@
     .icon__item {
         display: flex;
         font-size: 16px;
-        font-weight: 400;
         line-height: 18px;
         margin-right: 40px;
 

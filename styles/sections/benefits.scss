@@ -1,4 +1,4 @@
-.benefits {
+.benefits__section {
     background: url("../../img/decoration/pattern_benefits.png") left top 57% no-repeat;
     background-color: #fff;
     position: relative;
@@ -8,6 +8,7 @@
         position: absolute;
         bottom: -80px;
         left: 0;
+        z-index: 3;
     }
 
     .benefits__container {
@@ -15,61 +16,60 @@
     }
 }
 
-.section__content {
+.benefits {
     width: 100%;
     height: max-content;
 }
 
-.section__list {
+.benefits__list {
     display: flex;
-    height: max-content;
+    text-align: center;
+}
 
-    .section__item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 3%;
-        width: 332px;
-        height: max-content;
+.benefits__item {
+    position: relative;
+    display: flex;
+    width: 330px;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+
+    &:before {
+        content: url("../../img/decoration/combined_shape_benefits.png");
+        position: absolute;
+        top: 60px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
 
         &:before {
-            content: url("../../img/decoration/combined_shape_benefits.png");
-            position: absolute;
-            top: 60px;
-            right: 0;
-            transform: translateX(50%);
+            display: none;
         }
+    }
 
-        &:first-child {
-            padding-left: 0;
-        }
+    .benefits__img {
+        background-color: $lightGrey;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+    }
 
-        &:last-child {
-            padding-right: 0;
+    .benefits__text {
+        display: flex;
+        flex-direction: column;
 
-            &:before {
-                display: none;
-            }
-        }
-
-        .section__img {
-            background: $grey;
-            width: 130px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 130px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-
-            .benefits__img {
-                width: 68px;
-                height: 68px;
-            }
-        }
-
-        .section__title {
+        .benefits__title {
             font-size: 27px;
             font-weight: 700;
             line-height: 32px;
@@ -77,9 +77,10 @@
             margin-bottom: 20px;
         }
 
-        .section__title-desc {
-            text-align: center;
+        .benefits__title-desc {
+            font-weight: 300;
             line-height: 22px;
         }
     }
+
 }

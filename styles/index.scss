@@ -5,7 +5,8 @@ $blue: #61C4D9;
 $lightGreen: #497870;
 $green:#365A49;
 $darkGreen:#2E4E3F;
-$grey: #F2F5F4;
+$lightGrey: #F2F5F4;
+$grey: #F8FAF9;
 $darkGrey: #666666;
 $black: #292929;
 
@@ -17,3 +18,5 @@ $black: #292929;
 
 @import "./sections/hero.scss";
 @import "./sections/benefits.scss";
+@import "./sections/reviews.scss";
+@import "./sections/order.scss";

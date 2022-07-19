@@ -20,6 +20,14 @@
             color: $lightGreen;
         }
     }
+
+    @if $bg==transparent {
+        color: $lightGreen;
+
+        &:hover {
+            color: #000;
+        }
+    }
 }
 
 .btn__white {
@@ -28,4 +36,13 @@
 
 .btn__green {
     @include btn($green);
+    margin-right: 20px;
+}
+
+.btn__transparent {
+    @include btn(transparent);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 0;
 }
