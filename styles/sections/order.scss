@@ -1,5 +1,4 @@
 .order__section {
-    position: relative;
     background: url("../img/background/bg_order.png") center center no-repeat;
     background-color: #cfdeda;
     color: $lightGreen;
@@ -20,6 +19,7 @@
 }
 
 .order__container {
+    align-items: center;
     padding: 60px 0 85px;
 
     .order__title {

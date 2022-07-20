@@ -1,7 +1,7 @@
 .benefits__section {
     background: url("../img/decoration/pattern_benefits.png") left top 57% no-repeat;
     background-color: #fff;
-    position: relative;
+
 
     &:before {
         content: url("../img/decoration/berry_benefits.png");
@@ -12,6 +12,7 @@
     }
 
     .benefits__container {
+        align-items: center;
         padding: 100px 0 115px;
     }
 }
