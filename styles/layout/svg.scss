@@ -1,0 +1,50 @@
+/* header*/
+
+.logo-icon {
+    fill: #fff;
+    width: rem(55px);
+    height: rem(40px);
+}
+
+.phone-icon {
+    fill: #fff;
+    width: rem(14px);
+    height: rem(14px);
+    margin-right: rem(5px);
+
+}
+
+/*hero*/
+
+.icon {
+    fill: #fff;
+    width: rem(40px);
+    height: rem(40px);
+    margin-right: rem(10px);
+}
+
+/*benefits*/
+
+.benefits__icon {
+    width: rem(70px);
+    height: rem(70px);
+}
+
+/*footer*/
+
+.phone-icon__footer {
+    fill: $lightGreen;
+}
+
+/*socials*/
+
+.social__icon {
+    width: rem(20px);
+    height: rem(20px);
+    fill: #B3B3B3;
+
+    &:hover {
+        fill: #292929;
+        transition: .2s;
+    }
+}

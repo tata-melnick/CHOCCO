@@ -1,6 +1,9 @@
 $containerWidht: 940px;
 $baseFontSize: 18px;
 
+$tablets: 768px;
+$phones: 480px;
+
 $blue: #61C4D9;
 $lightGreen: #497870;
 $green:#365A49;
@@ -10,14 +13,19 @@ $grey: #F8FAF9;
 $darkGrey: #666666;
 $black: #292929;
 
+@import "./layout/media.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 
 @import "./layout/normalize.css";
 @import "./layout/base.scss";
 @import "./layout/btn.scss";
 @import "./layout/fixed-menu.scss";
+@import "./layout/hamburger.scss";
+@import "./layout/svg.scss";
 
 @import "./sections/hero.scss";
 @import "./sections/benefits.scss";
 @import "./sections/reviews.scss";
 @import "./sections/order.scss";
+@import "./sections/map.scss";

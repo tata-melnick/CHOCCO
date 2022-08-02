@@ -2,18 +2,34 @@
     background: url("../img/decoration/pattern_benefits.png") left top 57% no-repeat;
     background-color: #fff;
 
+    @include tablets {
+        background-position: left top 5%;
+    }
+
+    @include phones {
+        background-image: none;
+
+        &::before {
+            display: none;
+        }
+    }
+
 
     &:before {
         content: url("../img/decoration/berry_benefits.png");
         position: absolute;
-        bottom: -80px;
+        bottom: rem(-80px);
         left: 0;
         z-index: 3;
     }
+}
 
-    .benefits__container {
-        align-items: center;
-        padding: 100px 0 115px;
+.benefits__headline {
+    margin-bottom: rem(50px);
+    text-align: center;
+
+    @include phones {
+        width: 100%;
     }
 }
 
@@ -25,21 +41,41 @@
 .benefits__list {
     display: flex;
     text-align: center;
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
     position: relative;
     display: flex;
-    width: 330px;
+    width: 35%;
     height: max-content;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 rem(20px);
+
+    @include tablets {
+
+        &::before {
+            display: none;
+        }
+    }
+
+    @include phones {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: rem(30px);
+    }
 
     &:before {
         content: url("../img/decoration/combined_shape_benefits.png");
         position: absolute;
-        top: 60px;
+        top: rem(60px);
         right: 0;
         transform: translateX(50%);
     }
@@ -56,31 +92,46 @@
         }
     }
 
-    .benefits__img {
-        background-color: $lightGrey;
-        border-radius: 50%;
+    .benefits__icon-wrap {
         display: flex;
         justify-content: center;
-        width: 130px;
-        height: 130px;
-        margin-bottom: 20px;
+        align-items: center;
+        background: $lightGrey;
+        border-radius: 50%;
+        width: rem(130px);
+        height: rem(130px);
+        margin-bottom: rem(20px);
+
+        @include phones {
+            margin-right: rem(15px);
+            margin-bottom: 0;
+        }
     }
 
     .benefits__text {
         display: flex;
         flex-direction: column;
 
+        @include phones {
+            text-align: start;
+            width: 55%;
+        }
+
         .benefits__title {
-            font-size: 27px;
+            font-size: rem(27px);
             font-weight: 700;
-            line-height: 32px;
+            line-height: rem(32px);
             color: $black;
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
+
+            @include phones {
+                margin-bottom: rem(15px);
+            }
         }
 
         .benefits__title-desc {
             font-weight: 300;
-            line-height: 22px;
+            line-height: rem(22px);
         }
     }
 

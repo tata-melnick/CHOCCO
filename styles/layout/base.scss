@@ -1,14 +1,25 @@
+html {
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+}
+
+
 html, body {
     min-height: 100vh;
 }
 
 body {
-    font-size: $baseFontSize;
     font-weight: 400;
     font-family: "Alegreya Sans", Helvetica, sans-serif;
     color: $darkGrey;
     line-height: 1.42;
-    min-width: 1100px;
     -webkit-font-smoothing: antialiased;
     -moz-osxo-font-smoothing: grayscale;
 }
@@ -85,41 +96,64 @@ img {
 
 .wrapper {
     position: relative;
-    min-width: $containerWidht + 20px;
-    height: max-content;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    width: $containerWidht;
+    align-items: center;
+    width: 90%;
+    max-width: $containerWidht;
     height: 100%;
     margin: 0 auto;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 }
+
 
 .headline {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 100%;
     height: max-content;
     align-items: center;
-    margin-bottom: 10%;
+    text-align: center;
 
     .section__title {
-        font-size: 48px;
+        font-size: rem(48px);
         font-weight: 700;
-        line-height: 58px;
+        line-height: rem(58px);
         color: $black;
         text-transform: uppercase;
+
+        @include phones {
+            font-size: rem(40px);
+        }
     }
 
     .headline__subtitle {
         font-weight: 300;
-        line-height: 22px;
+        line-height: rem(22px);
         color: $darkGrey;
-        width: 85%;
-        margin-top: 20px;
+        padding: 0 26%;
+        margin-top: rem(20px);
         text-align: center;
+
+        @include tablets {
+            padding: 0 20%;
+            margin-top: rem(10px);
+        }
+
+        @include phones {
+            padding: 0 4%;
+            margin-top: rem(5px);
+        }
     }
 }

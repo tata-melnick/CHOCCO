@@ -4,90 +4,148 @@
     color: #FFFFFF;
     z-index: 1;
 
+    @include tablets {
+        background-position: right bottom 75%;
+    }
+
+    &:before, &:after {
+        @include tablets {
+            display: none;
+        }
+    }
+
     &:before {
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         left: 5%;
         content: url("../img/decoration/leaf_hero.png");
     }
 
     &:after {
         position: absolute;
-        bottom: -55px;
+        bottom: rem(-55px);
         right: 5%;
         content: url("../img/decoration/berries_hero.png");
     }
 }
 
 .hero__container {
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 25px 0 50px;
+    padding: rem(25px) 0 rem(50px);
     background: url("../img/decoration/bars_hero.png") right center / 50% auto no-repeat;
-}
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: max-content;
-    width: 100%;
-
-    .header__logo {
-        width: 53px;
-        height: 38px;
-    }
-
-    .header__phone {
-        width: 165px;
-        height: 30px;
-    }
-}
-
-.menu__list {
-    display: flex;
-
-    .menu__item {
-        margin-right: 30px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
-
-.phone {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    .phone__img {
-        margin-right: 5px;
-        width: 12px;
-        height: 12px;
-    }
-
-    .phone__number {
-        font-size: 22px;
+    @include tablets {
+        background: none;
     }
 }
 
 .hero__title-section {
     width: 40%;
     height: max-content;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &::before {
+            content: url("../../img/decoration/tablets__hero.png");
+        }
+    }
 }
 
 .hero__mane-title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
-    line-height: 58px;
+    line-height: rem(58px);
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .hero__title-desc {
-    font-size: 21px;
-    margin-bottom: 40px;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    margin-bottom: rem(35px);
+
+    @include tablets {
+        padding: 0 25%;
+    }
+
+    @include phones {
+        padding: 0 15%;
+    }
+}
+
+.hero__btn {
+    @include phones {
+        font-size: $baseFontSize + 1px;
+    }
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: max-content;
+    width: 100%;
+
+    .header__phone-number {
+        @include tablets {
+            display: none;
+        }
+    }
+}
+
+.menu {
+    margin: 0 rem(30px);
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: rem(4px);
+
+    .menu__item {
+        margin-right: rem(30px);
+        margin-bottom: rem(10px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .menu__link {
+        white-space: nowrap;
+    }
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    width: rem(165px);
+    height: rem(30px);
+}
+
+.phone-number__text {
+    font-size: rem(22px);
+    white-space: nowrap;
 }
 
 .icons__list {
@@ -95,27 +153,16 @@
 
     .icon__item {
         display: flex;
-        font-size: 16px;
-        line-height: 18px;
-        margin-right: 40px;
+        font-size: rem(16px);
+        line-height: rem(18px);
+        margin-right: rem(40px);
 
         :last-child {
             margin-right: 0;
         }
 
-
-        .icon__img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-
-            :last-child {
-                margin-right: 0;
-            }
-        }
-
         .icon__text {
-            width: 85px;
+            width: rem(85px);
         }
     }
 }
