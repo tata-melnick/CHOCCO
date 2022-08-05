@@ -21,6 +21,7 @@
         flex-direction: row;
         justify-content: space-between;
         height: 80%;
+        width: 100%;
 
         @include phones {
             flex-direction: column;
