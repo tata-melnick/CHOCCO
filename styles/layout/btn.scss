@@ -43,11 +43,6 @@
 
 .btn__green {
     @include btn($green);
-    margin-right: rem(20px);
-
-    @include tablets {
-        margin-right: rem(30px);
-    }
 }
 
 .btn__transparent {

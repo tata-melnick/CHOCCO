@@ -127,6 +127,14 @@
         justify-content: center;
         padding-left: rem(100px);
     }
+
+    .form__btn {
+        margin-right: rem(20px);
+
+        @include tablets {
+            margin-right: rem(30px);
+        }
+    }
 }
 
 .radio {

@@ -30,6 +30,31 @@
     height: rem(70px);
 }
 
+/*slider*/
+
+.slider__elem-left {
+    margin-left: rem(-50px);
+
+    @include tablets {
+        margin-left: 0;
+    }
+}
+
+.slider__elem-right {
+    margin-right: rem(-50px);
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.compound__link-elem {
+    fill: #fff;
+    width: rem(46px);
+    height: rem(46px);
+    margin-bottom: rem(5px);
+}
+
 /*footer*/
 
 .phone-icon__footer {
