@@ -6,7 +6,7 @@
     height: 23px;
 
     @include tablets {
-        display: inline-flex;
+        display: flex;
     }
 
     .hamburger__plank {

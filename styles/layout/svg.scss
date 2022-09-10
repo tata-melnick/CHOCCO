@@ -55,6 +55,13 @@
     margin-bottom: rem(5px);
 }
 
+.compound__icon {
+    fill: #000;
+    width: rem(32px);
+    height: rem(32px);
+    margin-right: rem(10px);
+}
+
 /*footer*/
 
 .phone-icon__footer {
@@ -72,4 +79,16 @@
         fill: #292929;
         transition: .2s;
     }
+}
+
+/*screen__menu*/
+
+.screen-menu__close-elem {
+    position: absolute;
+    width: rem(20px);
+    height: rem(20px);
+    fill: #fff;
+    top: rem(40px);
+    right: rem(40px);
+    transition: .3s;
 }

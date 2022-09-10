@@ -47,7 +47,7 @@
             </svg>
             <a href="tel:+78009039090" class="phone-number__text">8 800 903 90 90</a>
           </address>
-          <a href="" class="hamburger">
+          <a id="hamburger" href="" class="hamburger">
             <div class="hamburger__plank"></div>
             <div class="hamburger__plank"></div>
             <div class="hamburger__plank"></div>
@@ -148,16 +148,69 @@
             <div class="product__img">
               <img src="./img/decoration/slider_1.png" alt="bars">
             </div>
-            <div class="product__col compound">
-              <a href="#" class="compound__link">
+            <div id="slider" class="product__col compound">
+              <a id="openCompound" href="#" class="compound__link">
                 <svg class="compound__link-elem">
                   <use xlink:href="./img/svg/sprite.svg#bar"></use>
                 </svg>
                 <span class="compound__link-text">состав</span>
               </a>
-
-              <!--дописать список компонентов-->
-
+              <ul id="compound" class="compound__list">
+                <li class="compound__item">
+                  <div class="compound__col">
+                    <svg class="compound__icon">
+                      <use xlink:href="./img/svg/sprite.svg#grape"></use>
+                    </svg>
+                    <div class="compound__desc">Виноград</div>
+                  </div>
+                  <div class="compoun__weight">25 г</div>
+                </li>
+                <li class="compound__item">
+                  <div class="compound__col">
+                    <svg class="compound__icon">
+                      <use xlink:href="./img/svg/sprite.svg#nut"></use>
+                    </svg>
+                    <div class="compound__desc">Грецкий орех</div>
+                  </div>
+                  <div class="compoun__weight">32 г</div>
+                </li>
+                <li class="compound__item">
+                  <div class="compound__col">
+                    <svg class="compound__icon">
+                      <use xlink:href="./img/svg/sprite.svg#almond"></use>
+                    </svg>
+                    <div class="compound__desc">Кунжутное семя</div>
+                  </div>
+                  <div class="compoun__weight">20 г</div>
+                </li>
+                <li class="compound__item">
+                  <div class="compound__col">
+                    <svg class="compound__icon">
+                      <use xlink:href="./img/svg/sprite.svg#milk"></use>
+                    </svg>
+                    <div class="compound__desc">Сухое молоко</div>
+                  </div>
+                  <div class="compoun__weight">10 г</div>
+                </li>
+                <li class="compound__item">
+                  <div class="compound__col">
+                    <svg class="compound__icon">
+                      <use xlink:href="./img/svg/sprite.svg#sugar"></use>
+                    </svg>
+                    <div class="compound__desc">Зам. сахара</div>
+                  </div>
+                  <div class="compoun__weight">4 г</div>
+                </li>
+                <li class="compound__item">
+                  <div class="compound__col">
+                    <svg class="compound__icon">
+                      <use xlink:href="./img/svg/sprite.svg#beans"></use>
+                    </svg>
+                    <div class="compound__desc">Какао бобы</div>
+                  </div>
+                  <div class="compoun__weight">4 г</div>
+                </li>
+              </ul>
               <h2 class="section__title product__title">Батончик "Гранола виноград"</h2>
               <div class="product__title-desc">
                 Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко,
@@ -354,7 +407,6 @@
                   </a>
                 </li>
               </ul>
-
             </div>
           </div>
         </div>
@@ -392,6 +444,40 @@
       </li>
     </ul>
   </nav>
+  <div id="screenMenu" class="screen-menu__wrap">
+    <a id="close" href="" class="screen-menu__close">
+      <svg class="screen-menu__close-elem">
+        <use xlink:href="./img/svg/sprite.svg#close"></use>
+      </svg>
+    </a>
+    <nav class="screen-menu">
+      <ul class="screen-menu__list">
+        <li class="screen-menu__item">
+          <a href="#" class="screen-menu__link" data-scroll-to="benefits">О нас</a>
+        </li>
+        <li class="screen-menu__item">
+          <a href="#" class="screen-menu__link" data-scroll-to="benefits">Батончики</a>
+        </li>
+        <li class="screen-menu__item">
+          <a href="#" class="screen-menu__link" data-scroll-to="benefits">Команда</a>
+        </li>
+        <li class="screen-menu__item">
+          <a href="#" class="screen-menu__link" data-scroll-to="benefits">Меню</a>
+        </li>
+        <li class="screen-menu__item">
+          <a href="#" class="screen-menu__link" data-scroll-to="benefits">Отзывы</a>
+        </li>
+        <li class="tscreen-menu__item">
+          <a href="#" class="screen-menu__link" data-scroll-to="benefits">Как мы работаем</a>
+        </li>
+        <li class="screen-menu__item">
+          <a href="#" class="screen-menu__link" data-scroll-to="benefits">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="./JS/screen_menu.js"></script>
+  <script src="./JS/compound.js"></script>
 </body>
 
 </html>
